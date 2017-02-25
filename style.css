@@ -1,0 +1,13 @@
+/*
+Theme Name: Web Básica
+Version: 1.5
+Author: solucionesmart
+*/
+@import url(css/foundation.css);
+
+.row{
+		border: 1px solid red;	
+}
+.column{
+	border: 1px solid red;
+}
