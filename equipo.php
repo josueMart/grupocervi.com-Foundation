@@ -3,8 +3,8 @@
  ?>
 
  <?php get_header(); ?>
- <div class="row">imagen</div>
  <div class="row">
+ <div class="row">imagen</div>
  	<div class="column large-3">Silder Bar:
 
 

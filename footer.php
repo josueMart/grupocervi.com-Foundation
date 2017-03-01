@@ -1,27 +1,42 @@
 	<footer>
-		<div class="row">
-			<div class="column small-12  medium-6 large-3">
-			<h4>Oficinas Grupo Cervi</h4>
-			<p>Josefa Ortiz de Dominguez 733 Col. Lindavista Aguascalientes Ags. México C.P. 20270</p>
+		<div class="row row-footer footer-widget">
+			<div class="column small-12  medium-6 large-3 ">
+			<h3 class="widget-title">
+				<span >Oficinas Grupo Cervi:</span>
+			</h3>
+			
+			<p class="footer-text">Josefa Ortiz de Dominguez 733 </br>Col. Lindavista,</br>Aguascalientes Ags.</br>México. </br>C.P. 20270</p>
 
 			</div>
 			<div class="column small-12  medium-6 large-3">
-				<h4>Llamanos</h4>
-					<p>01 800 7138173 (Sin costo)</p>
-					<p>(449) 9131220 (Con 6 lineas)</p>
+			<h3 class="widget-title">
+				<span>Llamanos:</span>
+			</h3>	
+			
+					<p class="footer-text">01 800 7138173 (Sin costo)</br>
+					(449) 9131220 (Con 6 lineas)</p>
 			</div>
 			<div class="column small-12  medium-6 large-3">
-				<h4>Correo electrónico</h4>
-					<p>ventas@grupocervi.com</p>
-					<p>cervimedags@prodigy.net.mx</p>
+			<h3 class="widget-title">
+				<span>Correo electrónico:</span>
+			</h3>	
+				
+					<p class="footer-text" >ventas@grupocervi.com</br>
+					cervimedags@prodigy.net.mx</p>
 			</div>
 			<div class="column small-12  medium-6 large-3">
-					<span>Redes sociales</span>
-					<a href="#">Facebook</a>
-					<a href="#">Twitter</a>
+				<h3 class="widget-title">
+					<span>Redes sociales:</span>
+				</h3>
+					
+					<ul>
+						<li><a href="#" class="link-footer"><span class="icon-facebook2"></span> Facebook</a></li>
+						<li><a href="#"" class="link-footer"><span class="icon-twitter"></span>Twitter</a></li>
+					</ul>
 			</div>
+
 		</div>
-		<div class="row">
+		<div class="row footer-socket">
 			<div class="column large-6"> Copyright © 2017 GrupoCervi::Distribución de equipo médico</div>
 			<div class="column large-6">Sitio desarrollado por <a href="http://esaujosue.com">Solucionesmart</a></div>
 		</div>

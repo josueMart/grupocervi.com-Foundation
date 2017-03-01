@@ -4,10 +4,198 @@ Version: 1.5
 Author: solucionesmart
 */
 @import url(css/foundation.css);
+@import url(fonts.css);
+
+
+html,body{
+	background-color: #ecf0ec;
+}
+
+
+footer .row-footer{
+	color: #ffffff;
+	background-color: #333333;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	width: 100;
+}
+
+nav{
+	margin: 0px auto;
+	width: 90%;
+	max-width: 1000px;
+
+}
+li{
+	list-style: none;
+	font-size: 21px;
+}
+
+.link-footer{
+	color: #999999;
+}
+
+.link-footer > span{
+	padding: 10px;
+}
+
+nav ul{
+	list-style: none;
+	border-radius: 0 0 5px 5px;
+}
+
+
+nav > ul{
+	display: table;
+	width: 100%;
+	background: #2f6684;
+	position: relative;
+}	
+
+nav >ul li {
+	display: table-cell;
+}
+
+
+/*Sub menu*/
+nav > ul > li:hover > ul {
+	display: block;
+	height: 100%;
+}
+
+nav > ul > li > ul {
+	display: block;
+	position: absolute;
+	background: #2f6684;
+	overflow: hidden;
+	height: 0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul li a {
+	color: #fff;
+	display: block;
+	line-height: 20px;
+	padding: 20px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+
+	}
+
+
+nav > ul > li > ul > li a:hover{
+	background: #174459;
+	color: #fff;
+}
+
+nav > ul > li > a span {
+	background: #174459;
+	display: block;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	position: absolute;
+	top: -55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	border-radius: 0 0 5px 5px;
+
+}
+
+nav > ul > li > a span .icon{
+
+	display: block;
+	line-height: 60px;
+}
+
+
+nav > ul > li > a:hover > span{
+	top: 0;
+
+}
+
+/*colores*/
+nav ul li a .primero{
+	background: #0e5061;
+}
+nav ul li a .segundo{
+	background: #5da5a2;
+}
+nav ul li a .tercero{
+	background: #f25724;
+}
+nav ul li a .cuarto{
+	background: #174459;
+}
+nav ul li a .quinto{
+	background: #37a4d9;
+}
+nav ul li a .sexto{
+	background: #f25724;
+}
 
 .row{
-		border: 1px solid red;	
+	background: #fff;
+	border: 1px solid red;
+
 }
 .column{
-	border: 1px solid red;
+
+	
+	color: #999999;
+
+
+}
+.container{
+	background-color: #ececea;
+}
+
+#slider2_container .reslidedescription > span {
+    font-size: 26px;
+    color: #FFFFFF;
+}
+
+.main-header{
+	padding-bottom: 45px;
+}
+
+.footer-widget{
+	font-size: 14px;
+}
+.widget-title{
+	color: #D5D5D5;
+	border-bottom: 2px solid #009db9;
+	text-align: left;
+	font-size: 23px;
+}
+
+.widget-title span{
+	padding-bottom: 5px;
+}
+.footer-socket{
+	padding-bottom: 25px;
+	font-size: 13px;
+}
+
+.footer-socket > div{
+	color: #333333;
+	padding: 5px;
 }
