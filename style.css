@@ -9,6 +9,7 @@ Author: solucionesmart
 
 html,body{
 	background-color: #ecf0ec;
+	margin-bottom: 20px;
 }
 
 
@@ -33,7 +34,7 @@ nav{
 }
 li{
 	list-style: none;
-	font-size: 21px;
+	font-size: 16px;
 }
 
 .link-footer{
@@ -154,24 +155,22 @@ nav ul li a .sexto{
 
 .row{
 	background: #fff;
-	border: 1px solid red;
-
-}
-.column{
-
 	
-	color: #999999;
-
 
 }
+
+.row-footer{
+padding-top: 25px;
+}
+
 .container{
 	background-color: #ececea;
 }
 
-#slider2_container .reslidedescription > span {
+/*#slider2_container .reslidedescription > span {
     font-size: 26px;
     color: #FFFFFF;
-}
+}*/
 
 .main-header{
 	padding-bottom: 45px;
@@ -198,4 +197,55 @@ nav ul li a .sexto{
 .footer-socket > div{
 	color: #333333;
 	padding: 5px;
+}
+.promotions-row{
+}
+#promotion-excerpt{
+	color: #03b;
+}
+
+.promotion-cost{
+	color: #900;
+}
+.promotions-column{
+
+	border-top: 5px solid #ff5827;
+	border-bottom: 5px solid #ff5827;
+	border-left: 0px solid #009db9;
+	border-right: 0px solid #009db9;
+	
+}
+.promotions-excerpt{
+	color:blue;
+}
+
+.footer-text{
+	color: #999999;
+}
+p{
+	color:#082988;
+}
+
+.acerca-row
+{
+	background-color: #f8f8f8;
+	border-left: 4px solid #009db9;
+	text-align: left;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #333333;
+}
+.acerca-row p{
+	color: #333333;
+}
+.promo-row{
+	padding-top: 30px;
+}
+.btn-expand{
+	padding-top: 20px;
+}
+.btn-expand a{
+	font-size: 18px;
 }
