@@ -162,9 +162,20 @@ nav ul li a .sexto{
 	color: #ff5d26;
 }
 .single-content{
-	border: 3px solid #174459;
-	border-radius: 10px;
+	border: 3px solid #333333;
+	border-radius: 7px;
 	margin-bottom: 25px;
+}
+.single-content p{
+	color: #333333;
+}
+
+.single-title{
+	font-size: 36px;
+	color: #ff5d26;
+}
+.single-row{
+	padding: 35px;
 }
 .row{
 	background: #fff;

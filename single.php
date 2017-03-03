@@ -2,7 +2,7 @@
 <div class="row" align="center">
 	<h4 class="single-info-title"><span class="icon-info single-info-span"></span>  Información </h4>
 </div>
-<div class="row">
+<div class="row single-row">
 	 <?php       
       if(have_posts()) :
       while(have_posts()) :
@@ -16,8 +16,8 @@
             </div>
             <div class="column small-12  medium-6 large-9 single-content">
               <article>
-              <h4><?php the_title(); ?></h4>
-              <p><?php the_content(); ?></p>
+              <h4 class="single-title"><?php the_title(); ?></h4>
+              <p class="single-theContent"><?php the_content(); ?></p>
             </article>
             <div class="row" align="center">
 			<a class="button" >Pide más información</a>
