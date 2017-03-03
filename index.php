@@ -29,6 +29,7 @@
               <article>
               <h4><?php the_title(); ?></h4>
               <p><?php the_excerpt(); ?></p>
+              <a href="<?php the_permalink(); ?>" class="button">Leer más.</a>
             </article>
             </div>
             
