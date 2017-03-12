@@ -6,7 +6,8 @@ function register_my_menus(){
 
 		array(
 				'top-menu' => __('Menú Superior'),
-				'bottom-menu' => __('Menú del footer'),
+				'partes-menu' => __('Menú de partes'),
+                'marcas-menu' => __('Menú de marcas'),
 
 			)
 		);

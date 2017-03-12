@@ -177,26 +177,18 @@ nav ul li a .sexto{
 .single-row{
 	padding: 35px;
 }
-.row{
-	background: #fff;
 
-	}
-.column{
-
+.image-acerca{
+	size: 25px;
 }
 
 .row-footer{
-padding-top: 25px;
+	padding-top: 25px;
 }
 
 .container{
 	background-color: #ececea;
 }
-
-/*#slider2_container .reslidedescription > span {
-    font-size: 26px;
-    color: #FFFFFF;
-}*/
 
 .main-header{
 	padding-bottom: 45px;
@@ -259,13 +251,31 @@ p{
 	text-align: left;
 	padding-left: 15px;
 	padding-right: 15px;
-	padding-top: 25px;
+	padding-top: 30px;
 	padding-bottom: 25px;
 	color: #333333;
+	vertical-align: bottom;
+	margin-bottom: 27px;
+
+}
+.acerca-img{
+	 border-radius: 4px;
+     padding: 5px;
+    
 }
 .acerca-row p{
 	color: #333333;
 }
+ .acerca-row-image{
+ 	padding-bottom: 10px;
+ }
+.acerca-col-image{
+	padding: 15px;
+}
+.acerca-column{
+	padding-top: 16px;
+}
+
 .promo-row{
 	padding-top: 30px;
 }
@@ -274,4 +284,91 @@ p{
 }
 .btn-expand a{
 	font-size: 18px;
+}
+img{
+	border-radius: 4px;
+}
+#partes-img{
+	background-color: #fff;
+}
+
+.sidebar-marcas{
+	background-color: #fff;
+	border-radius: 3px;
+	padding: 5px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+
+}
+
+.menu-marcas li{
+	font-size: 16px;
+}
+
+.menu-marcas li a{
+	margin: 1px;
+	padding: 0;
+	color: #2f6684;
+	border-bottom: 1px dotted #4d4d4d;
+	margin-bottom: 5px;
+}
+.menu-marcas li a:hover{
+	color:  #fd5d21;
+	-webkit-transition: background .7s ease;
+	-moz-transition: background .7s ease;
+	-ms-transition: background .7s ease;
+	-o-transition: background .7s ease;
+	transition: background .7s ease;
+}
+#menu-cerviparts{
+	border-bottom: 4px solid #fd5d21;
+}
+#menu-cerviparts li a:hover{
+	background-color: #174459;
+	color: #fff;
+	-webkit-transition: background .7s ease;
+	-moz-transition: background .7s ease;
+	-ms-transition: background .7s ease;
+	-o-transition: background .7s ease;
+	transition: background .7s ease;
+	border-radius: 5px;
+}
+.parts-detail{
+	border-bottom: 1px dashed gray;
+	border-top: 1px dashed gray;
+}
+.detail-parts{
+	border-bottom: 1px dashed #4d4d4d;
+}
+.img-detail-parts{
+	border: 2px solid #008087;
+	padding: 2px;
+	border-radius: 5px;
+	width: 125px;
+	margin-left: 20%;
+	margin-top: 5%;
+}
+.column-brand-title{
+	margin-left:0;
+	padding-left:0;
+	padding-right: 0;
+	margin-right: 0;
+	padding-top: 10px;
+	border-bottom: 4px solid #fd5d21;
+}
+.brand-title{
+	color: #174459;
+	font-size: 20px;
+	margin:0;
+	padding: 0;
+}
+
+
+.row{
+	background: #fff;
+	/*border: 1px solid red;*/
+	}
+.column{
+	/*border: 1px solid red;*/
+
 }

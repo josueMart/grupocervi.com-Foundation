@@ -2,7 +2,7 @@
 		<div class="row row-footer footer-widget">
 			<div class="column small-12  medium-6 large-3 ">
 			<h3 class="widget-title">
-				<span >Oficinas Grupo Cervi:</span>
+				<span >Oficinas Grupo Cervi</span>
 			</h3>
 			
 			<p class="footer-text">Josefa Ortiz de Dominguez 733 </br>Col. Lindavista,</br>Aguascalientes Ags.</br>México. </br>C.P. 20270</p>
@@ -10,7 +10,7 @@
 			</div>
 			<div class="column small-12  medium-6 large-3 ">
 			<h3 class="widget-title">
-				<span>Llámanos:</span>
+				<span>Llámanos</span>
 			</h3>	
 			
 					<p class="footer-text">01 800 7138173 (Sin costo)</br>
@@ -18,7 +18,7 @@
 			</div>
 			<div class="column small-12  medium-6 large-3">
 			<h3 class="widget-title">
-				<span>Correo electrónico:</span>
+				<span>Correo electrónico</span>
 			</h3>	
 				
 					<p class="footer-text" >ventas@grupocervi.com</br>
@@ -26,7 +26,7 @@
 			</div>
 			<div class="column small-12  medium-6 large-3">
 				<h3 class="widget-title">
-					<span>Redes sociales:</span>
+					<span>Redes sociales</span>
 				</h3>
 					
 					<ul>
