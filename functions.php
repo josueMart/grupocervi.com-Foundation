@@ -2,16 +2,16 @@
 add_theme_support('post-thumbnails');
 
 function register_my_menus(){
-	register_nav_menus(
+    register_nav_menus(
 
-		array(
-				'top-menu' => __('Menú Superior'),
-				'partes-menu' => __('Menú de partes'),
+        array(
+                'top-menu' => __('Menú Superior'),
+                'partes-menu' => __('Menú de partes'),
                 'marcas-menu' => __('Menú de marcas'),
 
-			)
-		);
-		
+            )
+        );
+        
 }
 add_action('init', 'register_my_menus');
 
