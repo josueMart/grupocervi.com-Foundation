@@ -38,7 +38,7 @@
 		</div>
 		<div class="row footer-socket">
 			<div class="column large-6"> Copyright © 2017 GrupoCervi::Distribución de equipo médico</div>
-			<div class="column large-6">Sitio desarrollado por <a href="http://esaujosue.com">Solucionesmart</a></div>
+			<div class="column large-6">Sitio desarrollado por <a href="http://josuemc.com">josueMC</a></div>
 		</div>
 
 	</footer>
