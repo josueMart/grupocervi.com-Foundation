@@ -1,7 +1,4 @@
-<?php 
-// Template Name: Partes y Accesorios
- ?>
- <?php get_header(); ?>
+<?php get_header(); ?>
  <div class="row">
  	<div class="column large-2" id="menu-cerviparts">
         <?php wp_nav_menu(
@@ -52,7 +49,9 @@
  			 	endwhile;
  			 	else :
  			?>
- 				<h4>No hay entradas</h4>
+ 				 <div class="column large-12" align="center">
+                            <h4 class="single-info-title"><span class="icon-info single-info-span"></span> Lo sentimos, de momento no contamos con productos en esta categoría.</h4>
+                </div>
  			<?php 
  				endif;
  				wp_reset_postdata();

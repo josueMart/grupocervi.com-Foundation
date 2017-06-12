@@ -7,6 +7,8 @@
     <title><?php bloginfo(title); ?></title>
     <?php wp_head(); ?>
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css">
       
   </head>
   <body>
@@ -19,7 +21,6 @@
        <div class="column small-10">
          <nav class="main-navigation">
             <?php wp_nav_menu(
-
                      array(
 
                       'theme_location' => 'top-menu',
@@ -34,12 +35,9 @@
                       // 'link_before'    => '<span><i class="icon icon-home icon-price-tags">',
                       // 'link_after'     =>  '</span></i>',
                       )
-
             ) 
             ?>
-
-        </nav>
-          
+        </nav>         
        </div>
       </div>
     </header>

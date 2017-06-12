@@ -1,28 +1,31 @@
 <?php 
 add_theme_support('post-thumbnails');
-
+// función que llama al menu
 function register_my_menus(){
     register_nav_menus(
 
         array(
                 'top-menu' => __('Menú Superior'),
                 'partes-menu' => __('Menú de partes'),
-                'marcas-menu' => __('Menú de marcas'),
+                'equipos-menu' => __('Menú de equipos'),
 
             )
         );
         
 }
 
+//funcion que activa las imagenes
 function arphabet_widgets_init() {
 
     register_sidebar( array(
-        'name'          => 'Home right sidebar',
-        'id'            => 'home_right_1',
-        'before_widget' => '<div>',
+        'name'          => 'Partes',
+        'id'            => 'sidebar-partes',
+        'before_widget' => '<div class="menu menu-partes">',
+        'description'   => 'Este es el sidebar de navegacion de tipos de parte',
         'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="rounded">',
+        'before_title'  => '<h2 class="">',
         'after_title'   => '</h2>',
+        'items_wrap'    =>  '<ul id="%1$s" class="%2$s menu vertical menu-marcas">%3$s</ul>',
     ) );
 
 }

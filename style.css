@@ -152,6 +152,8 @@ nav ul li a .quinto{
 nav ul li a .sexto{
 	background: #f25724;
 }
+/*SLIDES-INDEX*/
+
 .single-info-title{
 	color: #D5D5D5;
 	padding: 25px;
@@ -217,6 +219,7 @@ nav ul li a .sexto{
 	padding: 5px;
 }
 .promotions-row{
+  align-items: center;
 }
 #promotion-excerpt{
 	color: #03b;
@@ -292,45 +295,42 @@ img{
 	background-color: #fff;
 }
 
-.sidebar-marcas{
-	background-color: #fff;
-	border-radius: 3px;
-	padding: 5px;
-	margin-bottom: 5px;
-	margin-top: 5px;
 
-}
-
-.menu-marcas li{
-	font-size: 16px;
-}
-
-.menu-marcas li a{
-	margin: 1px;
-	padding: 0;
-	color: #2f6684;
-	border-bottom: 1px dotted #4d4d4d;
-	margin-bottom: 5px;
-}
-.menu-marcas li a:hover{
-	color:  #fd5d21;
-	-webkit-transition: background .7s ease;
-	-moz-transition: background .7s ease;
-	-ms-transition: background .7s ease;
-	-o-transition: background .7s ease;
-	transition: background .7s ease;
-}
-#menu-cerviparts{
-	border-bottom: 4px solid #fd5d21;
+#menu-cerviparts ul > li > a{
+    border: 1px solid;
+    margin-bottom: 20px;
+    border-radius: 5px;
+	text-align: center;
+    background-color: #174459;
+    color: #FFF;
 }
 #menu-cerviparts li a:hover{
-	background-color: #174459;
-	color: #fff;
-	-webkit-transition: background .7s ease;
-	-moz-transition: background .7s ease;
-	-ms-transition: background .7s ease;
-	-o-transition: background .7s ease;
-	transition: background .7s ease;
+	background-color: #fff;
+	color: #174459;
+	-webkit-transition: background .4s ease;
+	-moz-transition: background .4s ease;
+	-ms-transition: background .4s ease;
+	-o-transition: background .4s ease;
+	transition: background .4s ease;
+	border-radius: 5px;
+}
+#menu-equipos ul > li > a{
+    border: 1px solid;
+    margin-bottom: 3px;
+    border-radius: 5px;
+	text-align: center;
+    background-color: #174459;
+    color: #FFF;
+    font-size: 13px;
+}
+#menu-equipos li a:hover{
+	background-color: #fff;
+	color: #174459;
+	-webkit-transition: background .4s ease;
+	-moz-transition: background .4s ease;
+	-ms-transition: background .4s ease;
+	-o-transition: background .4s ease;
+	transition: background .4s ease;
 	border-radius: 5px;
 }
 .parts-detail{
@@ -366,9 +366,101 @@ img{
 
 .row{
 	background: #fff;
-	/*border: 1px solid red;*/
+   /* border: 1px solid red;*/
 	}
 .column{
-	/*border: 1px solid red;*/
+    /*border: 1px solid red;*/
 
+}
+.entry-categories{
+    border-left: 2px solid #fd5d21;
+}
+#infoNoExistencias{
+    font-size: 3em;
+    color: #174459;
+    border: 2px solid #fd5d21; 
+}
+#vaporan-title{
+    background-color: #174459;
+    color:#fff;
+    border-radius: 5px;
+}
+#promo-title{
+    background-color: #f1c40f;
+    color: #fff;
+    margin-top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+ }
+ #promo-title h2{
+ 	font-size: 1.7rem;
+ 	font-weight: 300;
+ }
+.promotions{
+    border: 1px dashed red;
+    margin: 10px;
+    border-radius: 5px;
+    
+}
+.column-promo{
+	border: 1px dashed #bdc3c7;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-align: justify;
+	border-radius: 5px;
+}
+.img-promo{
+	max-width: 100%;
+}
+.fam-promo,
+.marca-promo,
+.modelo-promo{
+	text-align: center;
+	margin: 0;
+	padding-bottom: 0;
+	background-color: #34495e;
+}
+.fam-promo p,
+.marca-promo p,
+.modelo-promo p{
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	font-size: 1.1rem;
+}
+.precio-promo{
+	background-color: #2980b9;
+	text-align: center;
+}
+.precio-promo p{
+	color: white;
+	margin: 0;
+	padding: 0;
+	font-size: 1.9rem;
+}
+.extract-promo{
+	padding: 5px;
+	background-color: #1abc9c;
+
+}
+.extract-promo p{
+	color: white;
+	font-size: .9rem;
+	text-align: left;
+	font-weight: 300;
+}
+.terminos-promo{
+	background-color: #95a5a6;
+	padding: 10px;
+}
+.terminos-promo p{
+	color: white;
+	text-align: center;
+	font-weight: 300;
+	font-size: .8rem;
+	padding: 0;
+	margin: 0;
+}
+.btn-promo a{
+	margin-top: 10px;
 }

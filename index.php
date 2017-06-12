@@ -13,7 +13,7 @@
 
     <!-- the loop -->
     <?php 
-      $args = array('cat' => 9);
+      $args = array('cat' => 84);
       $category_posts = new WP_Query($args);
       if($category_posts->have_posts()) :
       while($category_posts->have_posts()) :
@@ -38,7 +38,7 @@
            endwhile;
             else :
           ?>
-            <h4>No hay entradas</h4>
+            <h4>No hay entradasi</h4>
         <?php 
          endif;
         wp_reset_postdata();

@@ -1,41 +1,64 @@
 <?php 
 //Template Name: Equipo medico
  ?>
-
- <?php get_header(); ?>
+<?php get_header(); ?>
  <div class="row">
- <div class="row">imagen</div>
- 	<div class="column large-3">Silder Bar:
+ 	<div class="column large-2" id="menu-equipos">
+        <?php wp_nav_menu(
+             array(
 
-
+                  'theme_location' => 'equipos-menu',
+                  'container' => false,
+                  'container_id' => '',
+                  'container_class' => '',
+                  'menu_class' => '',
+                  'echo' => true,
+                  'items_wrap' => '<ul id="%1$s" class="%2$s menu vertical">%3$s</ul>',
+                  'depth' => 0,
+//                
+              )
+        ) 
+        ?>        
  	</div>
- 	<div class="column large-9">
- 		<div class="row"> 
- 			<div class="column large-3">Imagen</div>
- 			<div class="column large-9">Info: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
- 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
- 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
- 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
- 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
- 			<div class="column large-3">Imagen2</div>
- 			<div class="column large-9">Info: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
- 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
- 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
- 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
- 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
- 			<div class="column large-3">Imagen3</div>
- 			<div class="column large-9">Info: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
- 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
- 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
- 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
- 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+ 	<div class="column large-10 entry-categories">
+ 		<div class="row">
+				<?php 
+ 				$args = array('cat' => 13, 'post_per_page' =>10);
+ 				$category_posts = new WP_Query($args);
 
+ 				if($category_posts->have_posts()) :
+ 					while($category_posts->have_posts()) :
+ 						?>
+ 					<?php 
 
+ 						$category_posts->the_post();
+ 			 ?>
+ 			 <div class="column large-3">
+	 			 <figure class="img-detail-parts">
+	 			 	<?php the_post_thumbnail(); ?>
+	 			 </figure> 	
+ 			 </div>
+ 			 <div class="column large-9 detail-parts">
+ 			 	<article>
+	 			 	<h4><?php the_title(); ?></h4>
+	 			 	<p><?php the_excerpt(); ?></p>
+	 			 	<a href="<?php the_permalink(); ?>" class="button">Más información</a> 
+ 			 	 </article>
+ 			 </div>
+ 			
+ 			 <?php 
+ 			 	endwhile;
+ 			 	else :
+ 			?>
+ 			 <div class="column large-12" align="center">
+                            <h4 class="single-info-title"><span class="icon-info single-info-span"></span> Lo sentimos, de momento no contamos con productos en esta categoría.</h4>
+             </div>
+ 			<?php 
+ 				endif;
+ 				wp_reset_postdata();
+ 			?> 			
  		</div>
  	</div>
- </div>
+</div>
+ <?php get_footer() ?>
 
- <?php get_footer(); ?>
