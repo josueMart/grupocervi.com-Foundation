@@ -5,132 +5,59 @@ get_header();
    <div class="row" align="center" id="promo-title">
        <h2>¡No te pierdas nuestras promociones!</h2>
    </div>
-   <div class="row">
-     <div class="column large-3 medium-4 small-12 column-promo">
-       <div class="row img-promo" >
-         <img src="http://localhost/wp-content/uploads/2017/04/versacare-hill-rom.jpg" alt="">
-       </div>
-       <div class="row fam-promo">
-         <p>Equipo médico</p>
-       </div>
-        <div class="row marca-promo">
-         <p>Welch Allyn</p>
-       </div>
-        <div class="row modelo-promo">
-         <p>U-3100</p>
-       </div>
-        <div class="row precio-promo">
-         <p>$267.40</p>
-       </div>
-        <div class="row extract-promo">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit modi fuga ipsum adipisci dolorum, pariatur accusamus neque asperiores ea corporis illum eveniet, numquam est rem voluptate iusto similique commodi nostrum?</p>
-       </div>
-       <div class="row terminos-promo">
-         <p>
-           *Precios sujetos a cambio sin previo aviso. <br>
-           *Precio Neto M.N. 
-         </p>
-       </div>
-       <div class="row btn-promo" align="center">
-          <a href="#" class="button">Más Información</a>
-         
-       </div>
-     </div>
-     
-     <!-- Articulo 2 -->
-  <div class="column large-3 medium-4 small-12 column-promo">
-       <div class="row img-promo" >
-         <img src="http://localhost/wp-content/uploads/2017/04/versacare-hill-rom.jpg" alt="">
-       </div>
-       <div class="row fam-promo">
-         <p>Equipo médico</p>
-       </div>
-        <div class="row marca-promo">
-         <p>Welch Allyn</p>
-       </div>
-        <div class="row modelo-promo">
-         <p>U-3100</p>
-       </div>
-        <div class="row precio-promo">
-         <p>$267.40</p>
-       </div>
-        <div class="row extract-promo">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit modi fuga ipsum adipisci dolorum, pariatur accusamus neque asperiores ea corporis illum eveniet, numquam est rem voluptate iusto similique commodi nostrum?</p>
-       </div>
-       <div class="row terminos-promo">
-         <p>
-           *Precios sujetos a cambio sin previo aviso. <br>
-           *Precio Neto M.N. 
-         </p>
-       </div>
-       <div class="row btn-promo" align="center">
-          <a href="#" class="button">Más Información</a>
-         
-       </div>
-     </div>
-     
-     <!-- Articulo 3 -->
-      <div class="column large-3 medium-4 small-12 column-promo">
-       <div class="row img-promo" >
-         <img src="http://localhost/wp-content/uploads/2017/04/versacare-hill-rom.jpg" alt="">
-       </div>
-       <div class="row fam-promo">
-         <p>Equipo médico</p>
-       </div>
-        <div class="row marca-promo">
-         <p>Welch Allyn</p>
-       </div>
-        <div class="row modelo-promo">
-         <p>U-3100</p>
-       </div>
-        <div class="row precio-promo">
-         <p>$267.40</p>
-       </div>
-        <div class="row extract-promo">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit modi fuga ipsum adipisci dolorum, pariatur accusamus neque asperiores ea corporis illum eveniet, numquam est rem voluptate iusto similique commodi nostrum?</p>
-       </div>
-       <div class="row terminos-promo">
-         <p>
-           *Precios sujetos a cambio sin previo aviso. <br>
-           *Precio Neto M.N. 
-         </p>
-       </div>
-       <div class="row btn-promo" align="center">
-          <a href="#" class="button">Más Información</a>
-         
-       </div>
-     </div>
+   <div class="row fondo-blanco">
+<!--PROMOCIONES -->
 
-          <!-- Articulo 4 -->
+      <?php 
+      $args = array('cat' => 104);
+      $category_posts = new WP_Query($args);
+      if($category_posts->have_posts()) :
+      while($category_posts->have_posts()) :
+    ?> 
+
       <div class="column large-3 medium-4 small-12 column-promo">
-       <div class="row img-promo" >
-         <img src="http://localhost/wp-content/uploads/2017/04/versacare-hill-rom.jpg" alt="">
+      <?php 
+            $category_posts->the_post();
+          ?>
+         <div class="row promociones-img-promo" >
+        <?php the_post_thumbnail(); ?>
        </div>
-       <div class="row fam-promo">
-         <p>Equipo médico</p>
+       <div class="row promociones-fam-promo">
+         <p><?php the_title(); ?></p>
        </div>
-        <div class="row marca-promo">
-         <p>Welch Allyn</p>
+        <div class="row promociones-marca-promo">
+         <p><?php echo the_field("marca"); ?></p>
        </div>
-        <div class="row modelo-promo">
-         <p>U-3100</p>
+        <div class="row promociones-modelo-promo">
+         <p><?php echo the_field("modelo"); ?></p>
        </div>
-        <div class="row precio-promo">
-         <p>$267.40</p>
+        <div class="row promociones-precio-promo">
+         <p><?php echo the_field("precio") ?></p>
        </div>
-        <div class="row extract-promo">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit modi fuga ipsum adipisci dolorum, pariatur accusamus neque asperiores ea corporis illum eveniet, numquam est rem voluptate iusto similique commodi nostrum?</p>
+        <div class="row promociones-extract-promo">
+         <p><?php the_excerpt(); ?></p>
        </div>
-       <div class="row terminos-promo">
+       <div class="row promociones-terminos-promo">
          <p>
            *Precios sujetos a cambio sin previo aviso. <br>
-           *Precio Neto M.N. 
+           *Precio Neto <?php echo the_field("moneda") ?> 
          </p>
        </div>
-       <div class="row btn-promo" align="center">
-          <a href="#" class="button">Más Información</a>
+       <div class="row promociones-btn-promo" align="center">
+          <a href="<?php the_permalink(); ?>" class="button">Más Información</a>
          
        </div>
-     </div>
+      </div>
+       <?php 
+           endwhile;
+            else :
+          ?>
+            <h4>No hay entradas</h4>
+        <?php 
+         endif;
+        wp_reset_postdata();
+        ?>
    </div>   
 <?php get_footer(); ?>
+
+
