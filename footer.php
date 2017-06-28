@@ -29,7 +29,7 @@
 					<span>Redes sociales</span>
 				</h3>
 					
-					<ul>
+					<ul class="social-networks">
 						<li><a href="#" class="link-footer"><span class="icon-facebook2"></span> Facebook</a></li>
 						<li><a href="#"" class="link-footer"><span class="icon-twitter"></span>Twitter</a></li>
 					</ul>
@@ -43,9 +43,6 @@
 
 	</footer>
 	<?php wp_footer(); ?>
-	<script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+	
+	  </body>
 </html>
