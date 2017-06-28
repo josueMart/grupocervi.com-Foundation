@@ -25,7 +25,7 @@
   </div>
   <div class="column large-10 medium-12 small-12"> 
   <?php 
-        $args = array('cat' => 86, 'post_per_page' =>10);
+        $args = array('cat' => 105, 'post_per_page' =>10);
         $category_posts = new WP_Query($args);
 
         if($category_posts->have_posts()) :

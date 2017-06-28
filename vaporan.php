@@ -3,14 +3,14 @@
 <div class="row" align="center" id="vaporan-title">
 <h3>Conoce nuestros servicios a equipos de anestesia.</h3>
 </div>
-<div class="row">
+<div class="row fondo-blanco">
     <div class="column large-6 small-6 large-centered medium-centered">
           <figure>
             <img src="http://localhost/wp-content/uploads/2017/04/vaporan.jpg" alt="">
           </figure>
     </div>
 </div>
-<div class="row">
+<div class="row fondo-blanco">
   <div class="column large-4">
       <figure>
           <img src="http://localhost/wp-content/uploads/2017/04/vaporan01-285x300.jpg" alt="">

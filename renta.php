@@ -1,7 +1,7 @@
 <?php //Template Name: Renta de equipo ?>
 
 <?php get_header(); ?>
-<div class="row">
+<div class="row fondo-blanco">
     <div class="column large-6 small-6" >
         <figure>
         <img src="http://localhost/wp-content/uploads/2017/04/medical_rentals.jpg" alt="">
@@ -9,7 +9,7 @@
     </div>
     
 </div>
-<div class="row">
+<div class="row fondo-blanco">
    	<div class="column large-10 small-10 entry-categories">
  		<div class="row">
 				<?php 

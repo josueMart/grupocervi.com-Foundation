@@ -1,0 +1,51 @@
+.catalog-detalles-equipo{
+	border-bottom: 1px dashed gray;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.catalog-detail-parts{
+	max-height: 100%;
+}
+.catalog-detail-parts article img{
+	max-width: 75px;
+	max-height: 35px;	
+}
+.catalog-detail-parts p{
+}
+.catalog-detail-parts p:nth-child(2){
+	font-size: 1.7rem;
+	text-align: center;
+	padding-bottom: 0;
+
+}
+.catalog-detail-parts p:nth-child(3),
+.catalog-detail-parts p:nth-child(4)
+{
+	font-size: 1.1rem;
+	line-height: .8;
+	margin: 5px;
+	text-align: center;
+}
+.catalog-detail-parts p:nth-child(5){
+	background-color: #16a085;
+	color: #fff;
+	font-size: 1.2rem;
+}
+.img-detail-parts img{
+	border-radius: 5px;
+	max-width: 100%;
+	max-height: 175px;
+}
+.catalog-detail-gral p{
+	text-align: left;
+	font-size: 1rem;
+	line-height: 1.2;
+}
+
+@media screen and (max-width:806px){
+.catalog-detail-gral p{
+	text-align: left;
+	font-size: .9rem;
+	color: #2c3e50;
+}
+}
