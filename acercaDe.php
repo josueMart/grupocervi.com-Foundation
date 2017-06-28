@@ -3,7 +3,7 @@
  ?>
 
  <?php get_header(); ?>
- <div class="row">
+ <div class="row fondo-blanco">
  	<div class="column large-3 acerca-img" align="center">
   			<?php the_post_thumbnail();?> 		
  	</div>
@@ -14,7 +14,7 @@
  		
  	</div>
  </div>
- <div class="row">
+ <div class="row fondo-blanco">
  <div class="column large-3 medium-3">
  	
  </div>
@@ -25,7 +25,7 @@
  </div>
  	
  </div>
- <div class="row acerca-row-image">
+ <div class="row acerca-row-image fondo-blanco">
  	<div class="column large-3 medium-3"></div>
 
  		<div class="column large-9 medium-9" align="center" class="acerca-col-image">
@@ -33,14 +33,14 @@
 
  		</div>
  	</div>
- <div class="row">
+ <div class="row fondo-blanco">
  	<div class="column large-3 medium-3"></div>
 
  	<div class="column large-9 medium-9 acerca-row">
  		<p><h4><span class="icon-stats-dots" align="right"></span> Visión</h4>Seremos una empresa líder en nuestro ramo, con presencia a nivel nacional, Latinoamérica e internacional, desarrollando y comercializando nuestra propia tecnología médica para así proveer con los mejores equipos, productos y servicios a hospitales, clínicas, médicos y sector salud., Implementando permanentemente sistemas de calidad y de mejora continua en cada uno de nuestros procesos.</p>
 
  	</div>
- 	</div>
+ </div>
  	 
 
  <?php get_footer(); ?>
